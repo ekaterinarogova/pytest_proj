@@ -14,6 +14,9 @@ def get(array, index, default=None):
     if index < 0:
         return default
 
+    if index >= len(array):
+        return "нет такого значения"
+
     return array[index]
 
 
